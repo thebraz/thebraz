@@ -1,61 +1,77 @@
 <p align="center">
-  <img src="./banner.gif" width="100%" alt="thebraz banner">
+  <img src="./assets/banner.gif" width="100%" alt="thebraz banner">
+</p>
+
+<br>
+
+<p align="center">
+  <strong>Building useful software around backend systems, security and developer tooling.</strong>
 </p>
 
 <p align="center">
-  Building backend systems, developer tools, and security-focused software.
+  <sub>Clean architecture · Maintainability · Systems · Security</sub>
 </p>
 
----
----
+<br>
 
-## / about
+<img src="./assets/section-about.png" width="100%" alt="01 / About">
 
-I enjoy building software that solves real problems, with a focus on clean architecture, maintainability, and security.
+<br>
 
-- Building developer tools and backend systems
-- Exploring cybersecurity and system internals
-- Working primarily with Linux environments
-- Learning how software behaves under the hood
+I build software focused on solving real problems while keeping the codebase clean, maintainable and understandable.
 
----
+I'm particularly interested in backend engineering, developer tooling, cybersecurity, Linux and understanding how systems behave beneath the surface.
 
-## / current-focus
+<br><br>
 
-**RepoDoctor**  
-Repository health and architecture analysis tooling. Preparing for its first public release.
+<img src="./assets/section-current-work.png" width="100%" alt="02 / Current Work">
 
-**EnvGuard**  
-Environment configuration and security tooling.
+<br>
 
----
+<img src="./assets/card-repodoctor.png" width="100%" alt="RepoDoctor">
 
-## / stack
+<br>
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,nodejs,java,cs,postgres,docker,linux,git,github" />
-</p>
 
----
 
-## / github
+<br><br>
+
+<img src="./assets/section-toolbox.png" width="100%" alt="03 / Toolbox">
+
+<br>
 
 <p align="center">
-  <img
-    height="165"
-    src="https://github-readme-stats.vercel.app/api?username=braz183&show_icons=true&hide_border=true&theme=transparent&title_color=7C5CFC&icon_color=7C5CFC&text_color=C9D1D9"
-  />
+  <code>TypeScript</code>
+  &nbsp;&nbsp;
+  <code>Node.js</code>
+  &nbsp;&nbsp;
+  <code>Java</code>
+  &nbsp;&nbsp;
+  <code>C#</code>
 </p>
 
 <p align="center">
-  <img
-    height="165"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=braz183&layout=compact&hide_border=true&theme=transparent&title_color=7C5CFC&text_color=C9D1D9"
-  />
+  <code>PostgreSQL</code>
+  &nbsp;&nbsp;
+  <code>Docker</code>
+  &nbsp;&nbsp;
+  <code>Linux</code>
+  &nbsp;&nbsp;
+  <code>Git</code>
 </p>
 
----
+<br><br>
+
+<img src="./assets/section-github.png" width="100%" alt="04 / GitHub">
+
+<br>
 
 <p align="center">
-  <code>BUILD // UNDERSTAND // IMPROVE</code>
+  Currently building and preparing my first public developer tools.
+</p>
+
+<br><br>
+
+<p align="center">
+  <img src="./assets/footer-terminal.png" width="100%" alt="thebraz terminal">
 </p>
