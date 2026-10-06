@@ -1,20 +1,12 @@
 <p align="center">
-  <img src="./banner.gif" width="100%" alt="Braz — Backend Developer">
-</p>
-
-<h1 align="center">Braz</h1>
-
-<p align="center">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=2500&pause=900&color=7C5CFC&center=true&vCenter=true&width=650&lines=Backend+Developer;Software+Engineering;Cybersecurity;Building+Developer+Tools;Understanding+Systems+Under+the+Hood"
-    alt="Typing animation"
-  />
+  <img src="./banner.gif" width="100%" alt="thebraz banner">
 </p>
 
 <p align="center">
   Building backend systems, developer tools, and security-focused software.
 </p>
 
+---
 ---
 
 ## / about
