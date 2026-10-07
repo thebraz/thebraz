@@ -81,6 +81,51 @@ The goal is to make repositories **easier to inspect, reason about and improve**
 </p>
 
 
+<br>
+
+
+<p align="center">
+  <a href="https://github.com/thebraz/EnvGuard">
+    <img src="./assets/card-envguard.svg" width="82%" alt="EnvGuard">
+  </a>
+</p>
+
+### EnvGuard
+
+**Local-first environment security and configuration validation for modern codebases.**
+
+EnvGuard is a developer security CLI built to detect unsafe environment configuration before it becomes a production problem.
+
+It analyzes the relationship between source code, environment contracts, Git configuration and sensitive values to surface issues such as:
+
+- environment variables used in code but missing from the expected contract
+- unused or inconsistent environment definitions
+- hardcoded secrets
+- weak or unsafe secret values
+- sensitive `.env` files accidentally tracked by Git
+- secrets exposed through client-side environment variables
+- malformed or conflicting environment configuration
+- CI configuration problems related to environment variables
+
+The goal is to keep environment configuration **predictable, auditable and safe without sending project data anywhere**.
+
+<p align="center">
+  <code>TypeScript</code>
+  &nbsp;
+  <code>CLI</code>
+  &nbsp;
+  <code>Security</code>
+  &nbsp;
+  <code>Static Analysis</code>
+  &nbsp;
+  <code>DevSecOps</code>
+</p>
+
+<p align="center">
+  <a href="https://github.com/thebraz/EnvGuard"><strong>View EnvGuard →</strong></a>
+</p>
+
+
 <!-- TOOLBOX -->
 
 <img src="./assets/section-toolbox.svg" width="100%" alt="03 / Toolbox">
