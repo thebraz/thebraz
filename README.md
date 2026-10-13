@@ -48,21 +48,18 @@ Most of what interests me lives somewhere between **software architecture, devel
 
 **Repository analysis for architecture, maintainability and codebase health.**
 
-RepoDoctor is a developer tool built to help understand what is actually happening inside a repository before structural problems become expensive.
+RepoDoctor is a local CLI for reviewing structural signals in a repository, with evidence, confidence levels and explicit analysis coverage.
 
 It focuses on identifying things such as:
 
-- duplicated or suspiciously similar code
-- architectural inconsistencies
-- unnecessary or misplaced files
-- maintainability problems
-- structural complexity
-- repository organization issues
-- patterns that make a codebase harder to understand and evolve
+- runtime dependency cycles in TypeScript and JavaScript
+- potentially unused files and packages
+- large files and functions
+- exact token duplication in TypeScript and JavaScript
+- identical files and file metrics in other recognized languages
+- explainable structural scores with explicit coverage limits
 
-The goal is not to dump a wall of metrics.
-
-The goal is to make repositories **easier to inspect, reason about and improve**.
+Findings guide investigation; static analysis cannot prove that a candidate file is safe to delete or certify runtime behavior. See the [analysis reference](https://github.com/thebraz/RepoDoctor/blob/main/docs/reference.md) for supported syntax and limits.
 
 <p align="center">
   <code>TypeScript</code>
@@ -105,7 +102,7 @@ It analyzes the relationship between source code, environment contracts, Git con
 - sensitive `.env` files accidentally tracked by Git
 - secrets exposed through client-side environment variables
 - malformed or conflicting environment configuration
-- CI configuration problems related to environment variables
+- runtime variables that violate required, prohibited or typed schema rules
 
 The goal is to keep environment configuration **predictable, auditable and safe without sending project data anywhere**.
 
