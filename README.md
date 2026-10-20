@@ -48,21 +48,18 @@ Most of what interests me lives somewhere between **software architecture, devel
 
 **Repository analysis for architecture, maintainability and codebase health.**
 
-RepoDoctor is a developer tool built to help understand what is actually happening inside a repository before structural problems become expensive.
+RepoDoctor is a local CLI for reviewing structural signals in a repository, with evidence, confidence levels and explicit analysis coverage.
 
 It focuses on identifying things such as:
 
-- duplicated or suspiciously similar code
-- architectural inconsistencies
-- unnecessary or misplaced files
-- maintainability problems
-- structural complexity
-- repository organization issues
-- patterns that make a codebase harder to understand and evolve
+- runtime dependency cycles in TypeScript and JavaScript
+- potentially unused files and packages
+- large files and functions
+- exact token duplication in TypeScript and JavaScript
+- identical files and file metrics in other recognized languages
+- explainable structural scores with explicit coverage limits
 
-The goal is not to dump a wall of metrics.
-
-The goal is to make repositories **easier to inspect, reason about and improve**.
+Findings guide investigation; static analysis cannot prove that a candidate file is safe to delete or certify runtime behavior. See the [analysis reference](https://github.com/thebraz/RepoDoctor/blob/main/docs/reference.md) for supported syntax and limits.
 
 <p align="center">
   <code>TypeScript</code>
@@ -85,44 +82,67 @@ The goal is to make repositories **easier to inspect, reason about and improve**
 
 
 <p align="center">
-  <a href="https://github.com/thebraz/EnvGuard">
-    <img src="./assets/card-envguard.svg" width="82%" alt="EnvGuard">
+  <a href="https://github.com/thebraz/FlowCanvas">
+    <img src="./assets/card-flowcanvas.svg" width="82%" alt="FlowCanvas">
   </a>
 </p>
 
-### EnvGuard
+### FlowCanvas
 
-**Local-first environment security and configuration validation for modern codebases.**
+**Visual workspace for building and organizing interactive diagrams and workflows.**
 
-EnvGuard is a developer security CLI built to detect unsafe environment configuration before it becomes a production problem.
+FlowCanvas is a local-first visual JSON workflow editor. Build node-based diagrams by adding, dragging, connecting, configuring, duplicating and deleting nodes. Pan and zoom the canvas, select multiple nodes, copy/paste selections and undo/redo edits. Workflows save locally in IndexedDB and support validated JSON import/export.
 
-It analyzes the relationship between source code, environment contracts, Git configuration and sensitive values to surface issues such as:
-
-- environment variables used in code but missing from the expected contract
-- unused or inconsistent environment definitions
-- hardcoded secrets
-- weak or unsafe secret values
-- sensitive `.env` files accidentally tracked by Git
-- secrets exposed through client-side environment variables
-- malformed or conflicting environment configuration
-- CI configuration problems related to environment variables
-
-The goal is to keep environment configuration **predictable, auditable and safe without sending project data anywhere**.
+Its built-in nodes support manual triggers, JSON field updates, field selection, conditional routing, outputs and notes. Execute workflows locally in a worker with pause, resume, step and cancel controls, then inspect node inputs, outputs and the execution timeline. It is intended for exploring JSON transformations and workflow logic; arbitrary scripts, network/API nodes and loops are outside the current beta.
 
 <p align="center">
   <code>TypeScript</code>
   &nbsp;
-  <code>CLI</code>
+  <code>React</code>
   &nbsp;
-  <code>Security</code>
+  <code>Visual Workflows</code>
   &nbsp;
-  <code>Static Analysis</code>
+  <code>JSON</code>
   &nbsp;
-  <code>DevSecOps</code>
+  <code>Local-first</code>
 </p>
 
 <p align="center">
-  <a href="https://github.com/thebraz/EnvGuard"><strong>View EnvGuard →</strong></a>
+  <a href="https://github.com/thebraz/FlowCanvas"><strong>View FlowCanvas →</strong></a>
+</p>
+
+
+<br>
+
+
+<p align="center">
+  <a href="https://github.com/thebraz/QueueLite">
+    <img src="./assets/card-queuelite.svg" width="82%" alt="QueueLite">
+  </a>
+</p>
+
+### QueueLite
+
+**Lightweight queue management and background job processing.**
+
+QueueLite is a persistent background job queue for Node.js and TypeScript, backed by a local SQLite file. Enqueue JSON jobs with priorities, delays or scheduled times, then process them through registered handlers with bounded concurrency. Jobs move from pending to active and then completed or failed, with configurable retries/backoff, retained failure history, manual retry and pending-job cancellation.
+
+Renewable leases support crash recovery within a finite attempt budget. The SDK and inspection CLI expose job state and diagnostics, while workers support pause/resume and graceful shutdown. It is intended for application background tasks such as notifications and account preparation on one host. External effects must be idempotent: recovery can repeat work, and exactly-once execution and multi-host distribution are not provided.
+
+<p align="center">
+  <code>TypeScript</code>
+  &nbsp;
+  <code>Node.js</code>
+  &nbsp;
+  <code>SQLite</code>
+  &nbsp;
+  <code>Background Jobs</code>
+  &nbsp;
+  <code>CLI</code>
+</p>
+
+<p align="center">
+  <a href="https://github.com/thebraz/QueueLite"><strong>View QueueLite →</strong></a>
 </p>
 
 
